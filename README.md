@@ -1,12 +1,14 @@
 # Algorithms
 算法与数据结构刷题记录
 
-## 编译运行环境
+## 环境准备
+
+### 编译运行环境
 
 + linux, wsl2 Ubuntu 22.04 LTS
 
   ```bash
-  chang@C:~/Projects/cpp/LeetCode$ lsb_release -a
+  $ lsb_release -a
   No LSB modules are available.
   Distributor ID: Ubuntu
   Description:    Ubuntu 22.04 LTS
@@ -17,16 +19,72 @@
 + gcc
 
   ```bash
-  chang@C:~/Projects/cpp/LeetCode$ gcc -v
+  $ gcc -v
   ···
   Thread model: posix
   Supported LTO compression algorithms: zlib zstd
   gcc version 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
   ```
 
-  
 
-## 参考书籍、视频
+### 本地编译运行参考
+
+> + [GitHub - Pokerpoke/LeetCode: Debug LeetCode C/C++ problems locally.](https://github.com/Pokerpoke/LeetCode)
+> + [使用VSCode进行LeetCode C++本地调试 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/80062085)
+
+#### 1. 安装 cmake
+
+> + [ubuntu安装cmake的三种方法](https://blog.csdn.net/Man_1man/article/details/126467371)
+>
+> + [ubuntu18升级/安装cmake 超详细](https://blog.csdn.net/weixin_42035347/article/details/125763949)
+
++ 安装 openssl
+
+  ```bash
+  $ sudo apt install openssl
+  $ sudo apt install libssl-dev
+  ```
+
++ 安装 cmake
+
+  ```bash
+  $ wget https://cmake.org/files/v3.25/cmake-3.25.2.tar.gz  # 下载源文件
+  $ tar -xvzf cmake-3.25.2.tar.gz  # 解压
+  #【移动文件夹、重命名】
+  $ mv cmake-3.25.2/ /usr/local/bin/  # 移动文件夹  
+  $ mv cmake-3.25.2/ cmake/  # 重命名
+  $ cd /usr/local/bin/cmake/  # 切换路径
+  $ ./bootstrap
+  $ make  # 编译
+  $ sudo make install  # 安装
+  $ sudo ln -sf /usr/local/bin/cmake/bin/* /usr/bin/  # 建立软链接
+  $ hash -r
+  $ cmake --version  # 检查是否安装成功
+  ```
+
+#### 2. 安装 googleteset
+
+```bash
+$ git clone https://github.com/google/googletest.git
+$ cd googletest
+$ cmake .  # 预编译
+$ sudo make  # 编译
+$ sudo make install  # 安装
+```
+
+#### 3. 生成模板
+
+```bash
+$ ./generate_template 2.addTwoNUmbers
+```
+
+#### 4. 运行
+
+```bash
+$ ./leetcode 2.addTwoNUmbers
+```
+
+### 参考书籍、视频
 
 | 参考                                     | 进度 |
 | ---------------------------------------- | ---- |
@@ -40,8 +98,8 @@
 
 |  No  |                         Description                          |          Tag           |              Solution              |        Check         |
 | :--: | :----------------------------------------------------------: | :--------------------: | :--------------------------------: | :------------------: |
-|  27  | [27. 移除元素 - 力扣（Leetcode）](https://leetcode.cn/problems/remove-element/description/) | `array`|`two-pointers` | [27.移除元素](./src/27.移除元素.c) |  :white_check_mark:  |
-| 704  |                                                              |                        |                                    |  :white_check_mark:  |
+|  27  | [27. 移除元素 - 力扣（Leetcode）](https://leetcode.cn/problems/remove-element/description/) | `array`|`two-pointers` | [27.移除元素](./src/27.移除元素.c) |
+| 704  | [704. 二分查找 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-search/) | `array` | `binary-search` |  :white_check_mark:  |
 |  35  |                                                              |                        |                                    | :white_large_square: |
 |  34  |                                                              |                        |                                    |                      |
 |  69  |                                                              |                        |                                    |                      |
