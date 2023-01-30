@@ -1,4 +1,4 @@
-project(LeetCode)
+project(Algorithms)
 
 # CMake version >= 3.10 due to gtest_discover_tests()
 # See https://cmake.org/cmake/help/git-stage/module/GoogleTest.html

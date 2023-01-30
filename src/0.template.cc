@@ -5,12 +5,12 @@
  *
  * [0] isValid
  */
+
 // @lc code=start
 class Solution
 {
 public:
-    int isValid(vector<int> &nums)
-    {
+    int isValid(vector<int> &nums) {
         return 1;
     }
 };
@@ -19,9 +19,18 @@ public:
 TEST(isValid, isValid_1)
 {
     Solution s;
+
+    // 输入
     vector<int> in = {1, 2, 3};
+
+    // 期望输出
     int ans = 1;
-    EXPECT_EQ(s.isValid(in), ans);
+
+    // 实际输出
+    int res = s.isValid(in);
+
+    // 比较
+    EXPECT_EQ(res, ans);
 }
 
 int main(int argc, char **argv)

@@ -62,7 +62,7 @@
   $ cmake --version  # 检查是否安装成功
   ```
 
-#### 2. 安装 googleteset
+#### 2. 安装 googletest
 
 ```bash
 $ git clone https://github.com/google/googletest.git
@@ -86,34 +86,34 @@ $ ./leetcode 2.addTwoNUmbers
 
 ### 参考书籍、视频
 
-| 参考                                     | 进度 |
-| ---------------------------------------- | ---- |
-| :book:《跟着 Carl 学算法》               |      |
-| :book:《labuladong的算法小抄》           |      |
-| :cinema:《极客时间：算法训练营》         |      |
-| :cinema:《极客时间：数据结构与算法之美》 |      |
-| :cinema:《施磊：数据结构与算法之美》     |      |
+| 参考                                                         | 进度 |
+| ------------------------------------------------------------ | ---- |
+| :book:[《代码随想录：跟着 Carl 学算法》](https://programmercarl.com/) |      |
+| :book:《labuladong的算法小抄》                               |      |
+| :cinema:《极客时间：算法训练营》                             |      |
+| :cinema:《极客时间：数据结构与算法之美》                     |      |
+| :cinema:《施磊：数据结构与算法之美》                         |      |
+| :cinema:《imooc：》                                          |      |
 
 ## 数组
 
-|  No  |                         Description                          |          Tag           |              Solution              |        Check         |
-| :--: | :----------------------------------------------------------: | :--------------------: | :--------------------------------: | :------------------: |
-|  27  | [27. 移除元素 - 力扣（Leetcode）](https://leetcode.cn/problems/remove-element/description/) | `array`|`two-pointers` | [27.移除元素](./src/27.移除元素.c) |
-| 704  | [704. 二分查找 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-search/) | `array` | `binary-search` |  :white_check_mark:  |
-|  35  |                                                              |                        |                                    | :white_large_square: |
-|  34  |                                                              |                        |                                    |                      |
-|  69  |                                                              |                        |                                    |                      |
-| 367  |                                                              |                        |                                    |                      |
-|  27  |                                                              |                        |                                    |                      |
-|  26  |                                                              |                        |                                    |                      |
-| 283  |                                                              |                        |                                    |                      |
-| 844  |                                                              |                        |                                    |                      |
-| 977  |                                                              |                        |                                    |                      |
-| 209  |                                                              |                        |                                    |                      |
-| 904  |                                                              |                        |                                    |                      |
-|  76  |                                                              |                        |                                    |                      |
-|  59  |                                                              |                        |                                    |                      |
-|  54  |                                                              |                        |                                    |                      |
+|  No  |                         Description                          |              Tag              |        Solution |
+| :--: | :----------------------------------------------------------: | :--------------------------------: | :------------------: |
+| 704 | [704. 二分查找 - 力扣（Leetcode）](https://leetcode.cn/problems/binary-search/) | `binary-search` |  [704.search.cc](./src/704.search.cc)  |
+|  35  | [35. 搜索插入位置 - 力扣（Leetcode）](https://leetcode.cn/problems/search-insert-position/) | `binary-search` | [35.searchInsert.cc](./src/35.searchInsert.cc) |
+|  34  | [34. 在排序数组中查找元素的第一个和最后一个位置 - 力扣（Leetcode）](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | `binary-search` | [34.searchRange.cc](./src/34.searchRange.cc) |
+|  69  | [69. x 的平方根 - 力扣（Leetcode）](https://leetcode.cn/problems/sqrtx/) | `binary-search` | [69.mySqrt.cc](./src/69.mySqrt.cc) |
+| 367  | [367. 有效的完全平方数 - 力扣（Leetcode）](https://leetcode.cn/problems/valid-perfect-square/) | `binary-search` |                      |
+|  27  |  [27. 移除元素 - 力扣（Leetcode）](https://leetcode.cn/problems/remove-element/)                                                            | `two-pointers` | [27.removeElement.cc](./src/27.removeElement.cc) |
+|  26  |                                                              |                                    |                      |
+| 283  |                                                              |                                    |                      |
+| 844  |                                                              |                                    |                      |
+| 977  |                                                              |                                    |                      |
+| 209  |                                                              |                                    |                      |
+| 904  |                                                              |                                    |                      |
+|  76  |                                                              |                                    |                      |
+|  59  |                                                              |                                    |                      |
+|  54  |                                                              |                                    |                      |
 
 ## 链表
 
