@@ -3,3 +3,4 @@
 build
 backup
 CMakeSettings.json
+src/debug

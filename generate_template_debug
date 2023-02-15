@@ -17,12 +17,12 @@ else
     SOLUTION=$(echo ${SOLUTION} | sed 's/^.*\.//g')
 fi
 
-cp -f ${CMAKE_SOURCE_DIR}/src/0.template_debug.cc ${CMAKE_SOURCE_DIR}/src/${ID}.${SOLUTION}_debug.cc
+cp -f ${CMAKE_SOURCE_DIR}/src/0.template_debug.cc ${CMAKE_SOURCE_DIR}/src/debug/${ID}.${SOLUTION}_debug.cc
 
 # isValid 全替换成新方法名
 sed -i "s/isValid/$(expr ${SOLUTION})/g" \
-    ${CMAKE_SOURCE_DIR}/src/${ID}.${SOLUTION}_debug.cc
+    ${CMAKE_SOURCE_DIR}/src/debug/${ID}.${SOLUTION}_debug.cc
 
 # 0 替换为 新ID
 sed -i "s/0/$(expr ${ID})/g" \
-    ${CMAKE_SOURCE_DIR}/src/${ID}.${SOLUTION}_debug.cc
+    ${CMAKE_SOURCE_DIR}/src/debug/${ID}.${SOLUTION}_debug.cc

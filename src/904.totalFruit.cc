@@ -1,9 +1,9 @@
 #include "headers.h"
 
 /*
- * @lc app=leetcode.cn id=0 lang=cpp
+ * @lc app=leetcode.cn id=904 lang=cpp
  *
- * [0] isValid
+ * [904] totalFruit
  */
 
 // @lc code=start
@@ -11,24 +11,24 @@ class Solution
 {
 public:
     // 时间复杂度 O(log n), 空间复杂度 O(1)
-    int isValid(vector<int> &nums) {
-        return 1;
+    int totalFruit(vector<int>& fruits) {
+
     }
 };
 // @lc code=end
 
-TEST(isValid, isValid_1)
+TEST(totalFruit, totalFruit_1)
 {
     Solution s;
 
     // 输入
-    vector<int> in = {1, 2, 3};
+    vector<int> fruits = {1, 2, 1};
 
     // 期望输出
-    int ans = 1;
+    int ans = 3;
 
     // 实际输出
-    int res = s.isValid(in);
+    int res = s.totalFruit(fruits);
 
     // 比较
     EXPECT_EQ(res, ans);
