@@ -51,7 +51,8 @@
   $ wget https://cmake.org/files/v3.25/cmake-3.25.2.tar.gz  # 下载源文件
   $ tar -xvzf cmake-3.25.2.tar.gz  # 解压
   #【移动文件夹、重命名】
-  $ mv cmake-3.25.2/ /usr/local/bin/  # 移动文件夹  
+  $ mv cmake-3.25.2/ /usr/local/bin/  # 移动文件夹 
+  $ cd /usr/local/bin/
   $ mv cmake-3.25.2/ cmake/  # 重命名
   $ cd /usr/local/bin/cmake/  # 切换路径
   $ ./bootstrap
@@ -81,7 +82,7 @@ $ ./generate_template 2.addTwoNUmbers
 #### 4. 运行
 
 ```bash
-$ ./leetcode 2.addTwoNUmbers
+$ ./leetcode 2.addTwoNumbers
 ```
 
 ### 参考书籍、视频
@@ -112,8 +113,8 @@ $ ./leetcode 2.addTwoNUmbers
 | [844. 比较含退格的字符串 - 力扣（Leetcode）](https://leetcode.cn/problems/backspace-string-compare/) | `two-pointers` | [844.backspaceCompare.cc](./src/844.backspaceCompare.cc) |
 | [977. 有序数组的平方 - 力扣（Leetcode）](https://leetcode.cn/problems/squares-of-a-sorted-array/) | `two-pointers` | [977.sortedSquares.cc](./src/977.sortedSquares.cc) |
 | [209. 长度最小的子数组 - 力扣（Leetcode）](https://leetcode.cn/problems/minimum-size-subarray-sum/) | `sliding-window`:neutral_face: | [209.minSubArrayLen.cc](./src/209.minSubArrayLen.cc) |
-| [904. 水果成篮 - 力扣（Leetcode）](https://leetcode.cn/problems/fruit-into-baskets/) | `sliding-window`:neutral_face: |                      |
-| [76. 最小覆盖子串 - 力扣（Leetcode）](https://leetcode.cn/problems/minimum-window-substring/) | `sliding-window` |                      |
+| [904. 水果成篮 - 力扣（Leetcode）](https://leetcode.cn/problems/fruit-into-baskets/) | `sliding-window`:neutral_face: | [904.totalFruit.cc](./src/904.totalFruit.cc) |
+| [76. 最小覆盖子串 - 力扣（Leetcode）](https://leetcode.cn/problems/minimum-window-substring/) | `sliding-window` | [76.minWindow.cc](./src/76.minWindow.cc) |
 | [59. 螺旋矩阵 II - 力扣（Leetcode）](https://leetcode.cn/problems/spiral-matrix-ii/) | `matrix` |                      |
 | [54. 螺旋矩阵 - 力扣（Leetcode）](https://leetcode.cn/problems/spiral-matrix/) | `matrix` |                      |
 | [剑指 Offer 29. 顺时针打印矩阵 - 力扣（Leetcode）](https://leetcode.cn/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/) | `matrix` | |
